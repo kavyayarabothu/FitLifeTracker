@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FitLife Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+  <h2>🏋️‍♀️ FitLife Tracker</h2>
+  <nav>
+    <a href="index.html">Users</a>
+    <a href="meals.html">Meals</a>
+    <a href="workouts.html">Workouts</a>
+    <a href="reports.html">Reports</a>
+  </nav>
+</header>
+<hr>
+
+  <section >
+    <h2>Add New Workout</h2>
+
+    <label for="userSelect">Select User:</label>
+    <select id="userSelect"></select>
+
+    <div class="form-container">
+      <input type="text" id="workoutType" placeholder="Workout">
+      <input type="number" id="duration" placeholder="Duration (mins)">
+      <input type="number" id="weight" placeholder="Weight (kg)">
+      <button onclick="addWorkout()">Add Workout</button>
+    </div>
+  </section>
+
+  <section class="table-section">
+    <h2>All Workouts</h2>
+    <table id="workoutTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>UserId-Name</th>
+          <th>Workout</th>
+          <th>Duration</th>
+          <th>Weight</th>
+          <th>Calories Burned</th>
+          <th>Date</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <script src="js/workouts.js"></script>
+</body>
+</html>

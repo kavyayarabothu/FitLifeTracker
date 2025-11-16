@@ -1,0 +1,177 @@
+/* --- General Layout --- */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(120deg, #f5f7fa, #c3cfe2);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* --- Navigation Bar --- */
+nav {
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #1abc9c;
+}
+
+/* --- Section Container --- */
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Headings --- */
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* --- Forms --- */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+input, select {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+button {
+  background-color: #1abc9c;
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #16a085;
+  transform: scale(1.05);
+}
+
+/* --- Tables --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+th {
+  background-color: #2c3e50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #eafaf1;
+  transition: 0.2s;
+}
+
+/* --- Delete Button --- */
+.delete-btn {
+  background-color: #e74c3c;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+/* --- Reports Page Specific Styling --- */
+.form-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.form-section h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+#userSelect {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+#reportCard {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+  transition: 0.3s ease;
+}
+
+#reportCard:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+#reportCard h2 {
+  text-align: center;
+  color: #1abc9c;
+  margin-bottom: 20px;
+}
+
+#reportCard p {
+  font-size: 1.1em;
+  margin: 10px 0;
+  color: #333;
+}
+
+#reportCard strong {
+  color: #2c3e50;
+}
+
+.hidden {
+  display: none;
+}

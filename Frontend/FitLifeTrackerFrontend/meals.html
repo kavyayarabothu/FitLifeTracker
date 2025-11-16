@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FitLife Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+  <h2>🏋️‍♀️ FitLife Tracker</h2>
+  <nav>
+    <a href="index.html">Users</a>
+    <a href="meals.html">Meals</a>
+    <a href="workouts.html">Workouts</a>
+    <a href="reports.html">Reports</a>
+  </nav>
+</header>
+<hr>
+
+  <h1>🍱 Track Your Meals</h1>
+
+  <label for="userSelect">Select User: </label>
+  <select id="userSelect">
+  </select>
+
+  <div class="form-container">
+    <input type="text" id="mealName" placeholder="Enter Meal">
+    <select id="mealType">
+      <option value="">Select Type</option>
+      <option value="Breakfast">Breakfast</option>
+      <option value="Lunch">Lunch</option>
+      <option value="Dinner">Dinner</option>
+      <option value="Snack">Snack</option>
+    </select>
+    <button onclick="addMeal()">Add Meal</button>
+  </div>
+
+  <h2>All Meals</h2>
+  <table id="mealTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>UserId-Name</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Calories</th>
+        <th>Date</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="js/meals.js"></script>
+</body>
+</html>

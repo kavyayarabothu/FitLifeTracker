@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FitLife Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+  <h2>🏋️‍♀️ FitLife Tracker</h2>
+  <nav>
+    <a href="index.html">Users</a>
+    <a href="meals.html">Meals</a>
+    <a href="workouts.html">Workouts</a>
+    <a href="reports.html">Reports</a>
+  </nav>
+</header>
+<hr>
+
+  <section class="form-section">
+    <h2>Select User to View Report</h2>
+    <select id="userSelect"></select>
+    <button onclick="loadReport()">Show Report</button>
+  </section>
+
+  <section id="reportCard" class="card hidden">
+    <h2 id="userName"></h2>
+    <p><strong>Total Calories Consumed:</strong> <span id="calIn">0</span> kcal</p>
+    <p><strong>Total Calories Burned:</strong> <span id="calOut">0</span> kcal</p>
+    <p><strong>Balance:</strong> <span id="calBalance">0</span> kcal</p>
+  </section>
+
+  <script src="js/reports.js"></script>
+</body>
+</html>

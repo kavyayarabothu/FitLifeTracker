@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FitLife Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+  <h2>🏋️‍♀️ FitLife Tracker</h2>
+  <nav>
+    <a href="index.html">Users</a>
+    <a href="meals.html">Meals</a>
+    <a href="workouts.html">Workouts</a>
+    <a href="reports.html">Reports</a>
+  </nav>
+</header>
+<hr>
+
+  <h1>👤 FitLife Tracker - Users</h1>
+
+  <div class="form-container">
+    <input type="text" id="userName" placeholder="Enter name">
+    <input type="number" id="userAge" placeholder="Enter age">
+    <select id="userGender">
+      <option value="">Select Gender</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="other">Other</option>
+    </select>
+    <button onclick="addUser()">Add User</button>
+  </div>
+  <br>
+  <br>
+
+  <h2>All Users</h2>
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th>ID</th><th>Name</th><th>Age</th><th>Gender</th><th>Action</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
