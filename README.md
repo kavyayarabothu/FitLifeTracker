@@ -91,7 +91,7 @@ Frontend/index.html
 ![Users Page](screenshots/Users-Page.png)
 
 ### 🍽️ Meals Page
-![Meals Page](screenshots/Meals-page.png)
+![Meals Page](screenshots/Meals-Page.png)
 
 ### 🏋️‍♂️ Workouts Page
 ![Workouts Page](screenshots/Workouts-Page.png)
